@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>GTX Roleplay · Connexion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="music.js" defer></script>
+  <script src="loading.js" defer></script>
+</head>
+<body>
+  <div class="grid-background" aria-hidden="true"></div>
+  <main class="screen">
+    <header class="header">
+      <div class="brand"><img class="brand-logo" src="assets/logo.png" alt="GTX Roleplay"><div><strong id="brand">GTX ROLEPLAY</strong><small>SERIOUS ROLEPLAY</small></div></div>
+      <div class="header-tools">
+        <div class="connection"><i></i> CONNEXION AU SERVEUR <span id="elapsed">00:00</span></div>
+        <div id="music-caption" class="music-caption" hidden>
+          <span id="music-title">Musique</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <p class="eyebrow"><span></span> GARRY’S MOD <span class="separator">/</span> DARKRP</p>
+        <h1>Une ville.<br>Des rencontres.<br><span>Votre histoire.</span></h1>
+        <p class="description" id="welcome">Chaque rencontre est le début d’une nouvelle scène. Préparez votre arrivée, la ville vous attend.</p>
+        <div class="server-facts">
+          <div><small>SERVEUR</small><strong id="server-name">GTX ROLEPLAY | DarkRP Serious RP</strong></div>
+          <div><small>CARTE</small><strong id="map-name">En attente du serveur</strong></div>
+          <div><small>MODE DE JEU</small><strong id="game-mode">DarkRP</strong></div>
+        </div>
+      </div>
+      <aside class="briefing">
+        <div class="card-title"><span>AVANT D’ENTRER EN VILLE</span><span class="card-index">01 / 03</span></div>
+        <div class="tip-symbol" aria-hidden="true">“</div>
+        <h2 id="tip-title">Faites vivre votre personnage.</h2>
+        <p id="tip-body">Donnez-lui une personnalité, des ambitions et des raisons d’aller vers les autres. Les meilleures histoires se construisent ensemble.</p>
+        <div class="tip-bottom"><span>LE CONSEIL ROLEPLAY</span><div class="dots" aria-hidden="true"><i class="active"></i><i></i><i></i></div></div>
+        <div class="shortcuts">
+          <div><kbd>F1</kbd><span>Statistiques & réglages</span></div>
+          <div><kbd>F2</kbd><span>Amis</span></div>
+          <div><kbd>F3</kbd><span>Organisation</span></div>
+          <div><kbd>F4</kbd><span>Métiers</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="loading-panel">
+      <div class="loading-heading"><div><p class="eyebrow">VOTRE ARRIVÉE EN VILLE</p><h2 id="status" role="status">Connexion au serveur…</h2></div><div class="percentage" id="percentage">•••</div></div>
+      <div class="progress-track indeterminate" id="progress" role="progressbar" aria-label="Téléchargement des fichiers"><div id="progress-fill"></div></div>
+      <div class="loading-details"><span id="file-name">Préparation de votre connexion</span><span id="file-count">En attente des informations</span></div>
+      <div class="footer-line"><span><i></i> PRENEZ LE TEMPS DE CRÉER UNE BELLE SCÈNE.</span><span id="footer-brand">GTX ROLEPLAY <b>·</b> BIENVENUE CHEZ VOUS</span></div>
+    </footer>
+  </main>
+  <audio id="music" preload="none"></audio>
+</body>
+</html>
